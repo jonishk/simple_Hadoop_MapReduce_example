@@ -16,6 +16,8 @@ for line in sys.stdin:
     stopwords = set(['the', 'and', '.', ',', ':', ';', '-', '\'', '\"', '?', '!'])
 
     # output tuples (word, 1) in tab-delimited format
+    stopwords = set(['the', 'and', 'to', 'a', 'for'])
+
     for word in words:
         if word not in stopwords:
             print '%s\t%s' % (word, "1")
